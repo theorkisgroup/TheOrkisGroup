@@ -1,0 +1,32 @@
+media:
+  folder: images
+  public: /images
+
+content:
+  - name: website_data
+    label: "Website Content"
+    type: file
+    path: "data.json"
+    fields:
+      - name: hero_title
+        label: "Hero Title"
+        type: string
+      - name: hero_subtitle
+        label: "Hero Subtitle"
+        type: text
+      - name: properties
+        label: "Our Properties"
+        type: list
+        fields:
+          - name: title
+            label: "Property Name"
+            type: string
+          - name: location
+            label: "Location (e.g., Birmingham)"
+            type: string
+          - name: description
+            label: "Description"
+            type: text
+          - name: image
+            label: "Photo URL (or upload image)"
+            type: image

@@ -1,0 +1,18 @@
+{
+  "hero_title": "Empowering Lives Through Supported Living",
+  "hero_subtitle": "Premium property management, dedicated tenancy support, and reliable maintenance for supported living environments.",
+  "properties": [
+    {
+      "title": "Oakwood House",
+      "location": "West Midlands",
+      "description": "A fully refurbished 5-bedroom supported living facility featuring modern communal spaces, 24/7 maintenance support, and full accessibility.",
+      "image": "https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      "title": "Maple Court",
+      "location": "London",
+      "description": "A quiet, highly secure property tailored for independent living with on-site tenancy management and beautifully landscaped gardens.",
+      "image": "https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80"
+    }
+  ]
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Orkis Group Ltd | Supported Living</title>
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind Configuration & Custom CSS -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        orkis: {
+                            dark: '#2d1b4e',    /* Deep Purple */
+                            primary: '#6b46c1', /* Vibrant Purple */
+                            light: '#fdf2f8',   /* Light Pink */
+                            accent: '#f472b6',  /* Pink Accent */
+                        }
+                    },
+                    fontFamily: { sans: ['"Plus Jakarta Sans"', 'sans-serif'] }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+        .hero-gradient { background: linear-gradient(135deg, #fdf2f8 0%, #f3e8ff 100%); }
+        .nav-scrolled { background-color: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
+        
+        /* Floating Blob Animations */
+        @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .animate-blob { animation: blob 7s infinite; }
+        .animation-delay-2000 { animation-delay: 2s; }
+        .animation-delay-4000 { animation-delay: 4s; }
+    </style>
+</head>
+<body class="bg-orkis-light text-gray-800 font-sans antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 transition-all duration-300 bg-transparent" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="text-2xl font-bold text-orkis-dark tracking-tight">
+                        The <span class="text-orkis-primary">Orkis</span> Group
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-orkis-dark hover:text-orkis-primary font-medium transition-colors">Home</a>
+                    <a href="#services" class="text-orkis-dark hover:text-orkis-primary font-medium transition-colors">Services</a>
+                    <a href="#properties" class="text-orkis-dark hover:text-orkis-primary font-medium transition-colors">Properties</a>
+                    <a href="#contact" class="bg-orkis-primary text-white px-5 py-2 rounded-full hover:bg-orkis-dark transition-colors shadow-md shadow-purple-200">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section (Content dynamically injected here) -->
+    <section id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden hero-gradient">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center max-w-3xl mx-auto">
+            <h1 id="hero-title" class="text-4xl sm:text-5xl lg:text-6xl font-bold text-orkis-dark leading-tight mb-6">
+                <!-- Text loaded from data.json -->
+            </h1>
+            <p id="hero-subtitle" class="text-lg sm:text-xl text-gray-600 mb-10">
+                <!-- Text loaded from data.json -->
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#properties" class="bg-orkis-primary text-white px-8 py-3 rounded-full font-medium hover:bg-orkis-dark transition-all shadow-lg shadow-purple-300">View Properties</a>
+            </div>
+        </div>
+        
+        <!-- Decorative Background Shapes -->
+        <div class="absolute top-0 left-0 w-64 h-64 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob"></div>
+        <div class="absolute top-0 right-0 w-64 h-64 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-2000"></div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-orkis-dark mb-4">Our Expertise</h2>
+                <div class="w-20 h-1 bg-orkis-accent mx-auto rounded-full"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-orkis-light p-8 rounded-3xl border border-pink-50">
+                    <h3 class="text-xl font-bold text-orkis-dark mb-3">Property Management</h3>
+                    <p class="text-gray-600">Tailored property management specifically designed for the unique requirements of supported living.</p>
+                </div>
+                <div class="bg-orkis-light p-8 rounded-3xl border border-pink-50">
+                    <h3 class="text-xl font-bold text-orkis-dark mb-3">Tenancy Management</h3>
+                    <p class="text-gray-600">Compassionate and professional handling of tenancies, ensuring peace of mind.</p>
+                </div>
+                <div class="bg-orkis-light p-8 rounded-3xl border border-pink-50">
+                    <h3 class="text-xl font-bold text-orkis-dark mb-3">24/7 Maintenance</h3>
+                    <p class="text-gray-600">Responsive maintenance services to ensure all properties remain safe and fully compliant.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Properties Portfolio Section -->
+    <section id="properties" class="py-20 bg-orkis-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-orkis-dark mb-4">Our Properties</h2>
+                <div class="w-20 h-1 bg-orkis-accent mx-auto rounded-full mb-6"></div>
+                <p class="text-gray-600">Explore our premium supported living environments.</p>
+            </div>
+            
+            <!-- This grid will be populated automatically by data.json -->
+            <div id="property-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Properties load here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-orkis-dark text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6">Let's Work Together</h2>
+            <p class="text-purple-200 mb-8 max-w-md mx-auto">Contact The Orkis Group Ltd today to discuss how we can support your property management needs.</p>
+            <p class="text-purple-200 text-lg mb-12">contact@orkisgroup.co.uk | 0800 123 4567</p>
+            <div class="border-t border-purple-800/50 pt-8">
+                <p class="text-purple-300 text-sm">&copy; 2026 The Orkis Group Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // 1. Navbar Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 20) {
+                navbar.classList.add('nav-scrolled');
+                navbar.classList.remove('bg-transparent');
+            } else {
+                navbar.classList.remove('nav-scrolled');
+                navbar.classList.add('bg-transparent');
+            }
+        });
+
+        // 2. Fetch Data from Pages CMS (data.json)
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                // Populate Hero Title (Colors 'Supported Living' pink automatically)
+                const heroTitle = document.getElementById('hero-title');
+                if (data.hero_title) {
+                    // Split the title so the last two words are colored
+                    let titleText = data.hero_title;
+                    if(titleText.toLowerCase().includes("supported living")) {
+                        titleText = titleText.replace(/supported living/i, '<span class="text-transparent bg-clip-text bg-gradient-to-r from-orkis-primary to-orkis-accent">Supported Living</span>');
+                    }
+                    heroTitle.innerHTML = titleText;
+                }
+                
+                // Populate Subtitle
+                if (data.hero_subtitle) {
+                    document.getElementById('hero-subtitle').innerText = data.hero_subtitle;
+                }
+
+                // Populate Properties Grid
+                const grid = document.getElementById('property-grid');
+                if (data.properties && data.properties.length > 0) {
+                    grid.innerHTML = data.properties.map(item => `
+                        <div class="bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 border border-purple-100 group hover:-translate-y-1">
+                            <img src="${item.image}" alt="${item.title}" class="w-full h-56 object-cover" />
+                            <div class="p-6">
+                                <span class="text-xs font-semibold uppercase tracking-wider text-orkis-accent">${item.location}</span>
+                                <h3 class="text-xl font-bold text-orkis-dark mt-1 mb-2">${item.title}</h3>
+                                <p class="text-gray-600 text-sm">${item.description}</p>
+                            </div>
+                        </div>
+                    `).join('');
+                }
+            })
+            .catch(error => console.error('Error loading data:', error));
+    </script>
+</body>
+</html>
