@@ -6,7 +6,7 @@ content:
   - name: website_data
     label: "Website Content"
     type: file
-    path: "data.json"
+    path: data.json
     fields:
       - name: hero_title
         label: "Hero Title"
@@ -17,7 +17,7 @@ content:
       - name: properties
         label: "Our Properties"
         type: object
-        list: true        
+        list: true
         fields:
           - name: title
             label: "Property Name"
