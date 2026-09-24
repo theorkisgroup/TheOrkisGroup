@@ -14,6 +14,12 @@ content:
       - name: hero_subtitle
         label: "Hero Subtitle"
         type: text
+      - name: about_title
+        label: "About Us Headline"
+        type: string
+      - name: about_text
+        label: "About Us Paragraph"
+        type: text
       - name: services_title
         label: "Services Section Headline"
         type: string
