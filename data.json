@@ -1,27 +1,27 @@
 {
-  "hero_title": "Empowering Lives With The Right Housing",
-  "hero_subtitle": "Premium property management for Supported Living, dedicated tenancy support, and reliable maintenance for supported living environments.",
+  "hero_title": "Empowering Lives Through Supported Living",
+  "hero_subtitle": "Premium property management, dedicated tenancy support, and reliable maintenance for supported living environments.",
+  "services_title": "Our Expertise",
+  "services": [
+    {
+      "title": "Property Management",
+      "description": "Tailored property management specifically designed for the unique requirements of supported living."
+    },
+    {
+      "title": "Tenancy Management",
+      "description": "Compassionate and professional handling of tenancies, ensuring peace of mind."
+    },
+    {
+      "title": "24/7 Maintenance",
+      "description": "Responsive maintenance services to ensure all properties remain safe and fully compliant."
+    }
+  ],
   "properties": [
     {
-      "title": "Pownall Road",
-      "location": "Suffolk",
-      "description": "A fully refurbished 5-bedroom supported living facility featuring modern communal spaces, 24/7 maintenance support, and full accessibility.",
-      "image": "/images/photo-1568605117036-5fe5e7bab0b7.avif"
-    },
-    {
-      "title": "Pitcairn Works",
-      "location": "Ipswich",
-      "description": "A quiet, highly secure property tailored for independent living with on-site tenancy management and beautifully landscaped gardens.",
-      "image": "/images/photo-1570129477492-45c003edd2be.avif"
-    },
-    {
-      "title": "Leicester - Hinckley",
-      "location": "Leicestershire",
-      "description": "Ground floor flat - 2 bedroom"
-    },
-    {
-      "title": "Milton Keynes",
-      "location": "Milton Keynes"
+      "title": "Oakwood House",
+      "location": "West Midlands",
+      "description": "A fully refurbished 5-bedroom supported living facility featuring modern communal spaces.",
+      "image": ""
     }
   ]
 }
