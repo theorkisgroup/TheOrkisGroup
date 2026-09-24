@@ -3,16 +3,25 @@
   "hero_subtitle": "Premium property management for Supported Living, dedicated tenancy support, and reliable maintenance for supported living environments.",
   "properties": [
     {
-      "title": "Oakwood House",
-      "location": "West Midlands",
+      "title": "Pownall Road",
+      "location": "Suffolk",
       "description": "A fully refurbished 5-bedroom supported living facility featuring modern communal spaces, 24/7 maintenance support, and full accessibility.",
       "image": "/images/photo-1568605117036-5fe5e7bab0b7.avif"
     },
     {
-      "title": "Maple Court",
-      "location": "London",
+      "title": "Pitcairn Works",
+      "location": "Ipswich",
       "description": "A quiet, highly secure property tailored for independent living with on-site tenancy management and beautifully landscaped gardens.",
       "image": "/images/photo-1570129477492-45c003edd2be.avif"
+    },
+    {
+      "title": "Leicester - Hinckley",
+      "location": "Leicestershire",
+      "description": "Ground floor flat - 2 bedroom"
+    },
+    {
+      "title": "Milton Keynes",
+      "location": "Milton Keynes"
     }
   ]
 }
