@@ -23,6 +23,16 @@
       "title": "Pownall Road",
       "location": "Ipswich",
       "description": "Multiple flats - and fun stuff"
+    },
+    {
+      "title": "Pitcairn Works",
+      "location": "Ipswich",
+      "description": "A cul de sac of modern houses - ideal for privacy, but also communal living spaces."
+    },
+    {
+      "title": "Honduras Road",
+      "location": "Milton Keynes",
+      "description": "A house for young people"
     }
   ]
 }
