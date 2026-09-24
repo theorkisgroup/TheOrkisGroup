@@ -16,9 +16,9 @@ content:
         type: text
       - name: properties
         label: "Our Properties"
-type: object
-list: true        
-fields:
+        type: object
+        list: true        
+        fields:
           - name: title
             label: "Property Name"
             type: string
