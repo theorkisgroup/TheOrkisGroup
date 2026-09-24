@@ -47,6 +47,7 @@
                 </div>
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="#home" class="text-orkis-dark hover:text-orkis-primary font-medium transition-colors">Home</a>
+                    <a href="#about" class="text-orkis-dark hover:text-orkis-primary font-medium transition-colors">About</a>
                     <a href="#services" class="text-orkis-dark hover:text-orkis-primary font-medium transition-colors">Expertise</a>
                     <a href="#properties" class="text-orkis-dark hover:text-orkis-primary font-medium transition-colors">Properties</a>
                     <a href="#contact" class="bg-orkis-primary text-white px-5 py-2 rounded-full hover:bg-orkis-dark transition-colors shadow-md shadow-purple-200">Contact Us</a>
@@ -61,19 +62,20 @@
             <h1 id="hero-title" class="text-4xl sm:text-5xl lg:text-6xl font-bold text-orkis-dark leading-tight mb-6"></h1>
             <p id="hero-subtitle" class="text-lg sm:text-xl text-gray-600 mb-10"></p>
             <div class="flex justify-center gap-4">
-                <a href="#properties" class="bg-orkis-primary text-white px-8 py-3 rounded-full font-medium hover:bg-orkis-dark transition-all shadow-lg shadow-purple-300">View Properties</a>
+                <a href="#properties" id="hero-button" class="bg-orkis-primary text-white px-8 py-3 rounded-full font-medium hover:bg-orkis-dark transition-all shadow-lg shadow-purple-300">View Properties</a>
             </div>
         </div>
         <div class="absolute top-0 left-0 w-64 h-64 bg-pink-200 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob"></div>
         <div class="absolute top-0 right-0 w-64 h-64 bg-purple-300 rounded-full mix-blend-multiply filter blur-3xl opacity-50 animate-blob animation-delay-2000"></div>
     </section>
     
-<!-- About Us Section -->
+    <!-- About Us Section -->
     <section id="about" class="py-20 bg-white">
         <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 id="about-title" class="text-3xl font-bold text-orkis-dark mb-6"></h2>
             <div class="w-20 h-1 bg-orkis-accent mx-auto rounded-full mb-8"></div>
-            <p id="about-text" class="text-lg text-gray-600 leading-relaxed"></p>
+            <!-- whitespace-pre-wrap ensures paragraph gaps from Pages CMS render correctly -->
+            <p id="about-text" class="text-lg text-gray-600 leading-relaxed whitespace-pre-wrap text-left sm:text-center"></p>
         </div>
     </section>
     
@@ -104,13 +106,14 @@
     <!-- Footer -->
     <footer id="contact" class="bg-orkis-dark text-white pt-20 pb-10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 class="text-3xl font-bold mb-6">Let's Work Together</h2>
-            <p class="text-purple-200 mb-8 max-w-md mx-auto">Contact The Orkis Group Ltd today to discuss how we can support your property management needs.</p>
-            <p class="text-purple-200 text-lg mb-12">admin@theorkisgroup.co.uk | 01473 947361</p>
+            <h2 id="contact-heading" class="text-3xl font-bold mb-6">Let's Work Together</h2>
+            <p id="contact-text" class="text-purple-200 mb-8 max-w-md mx-auto">Contact The Orkis Group Ltd today to discuss how we can support your property management needs.</p>
+            <p class="text-purple-200 text-lg mb-12"><span id="contact-email">admin@theorkisgroup.co.uk</span> | <span id="contact-phone">01473 947361</span></p>
             <div class="border-t border-purple-800/50 pt-8">
-                <p class="text-purple-300 text-sm">&copy; 2026 The Orkis Group Ltd. All rights reserved.</p>
+                <p id="copyright-text" class="text-purple-300 text-sm">&copy; 2026 The Orkis Group Ltd. All rights reserved.</p>
             </div>
-        </footer>
+        </div>
+    </footer>
 
     <!-- Interactive Scripts -->
     <script>
@@ -137,9 +140,12 @@
                     document.getElementById('hero-title').innerHTML = titleText;
                 }
                 if (data.hero_subtitle) document.getElementById('hero-subtitle').innerText = data.hero_subtitle;
-// About Us
+                if (data.hero_button) document.getElementById('hero-button').innerText = data.hero_button;
+
+                // About Us
                 if (data.about_title) document.getElementById('about-title').innerText = data.about_title;
                 if (data.about_text) document.getElementById('about-text').innerText = data.about_text;
+
                 // Services
                 if (data.services_title) document.getElementById('services-title').innerText = data.services_title;
                 const servicesGrid = document.getElementById('services-grid');
@@ -174,6 +180,13 @@
                         `;
                     }).join('');
                 }
+
+                // Footer & Contact
+                if (data.contact_heading) document.getElementById('contact-heading').innerText = data.contact_heading;
+                if (data.contact_text) document.getElementById('contact-text').innerText = data.contact_text;
+                if (data.email_address) document.getElementById('contact-email').innerText = data.email_address;
+                if (data.phone_number) document.getElementById('contact-phone').innerText = data.phone_number;
+                if (data.copyright) document.getElementById('copyright-text').innerText = data.copyright;
             });
     </script>
 </body>
