@@ -1,8 +1,9 @@
 {
   "hero_title": "Empowering Lives Through the Right Housing",
   "hero_subtitle": "Supported Living property management, dedicated tenancy support, and reliable maintenance for supported living environments.",
+  "hero_button": "View Properties",
   "about_title": "About The Orkis Group",
-  "about_text": "We are a dedicated property management company specializing in supported living accommodation. We work with local authorities and care providers to provide accommodation for those with support needs.\n\nWe believe that everyone deserves a safe, high-quality, and comfortable environment. Our team works around the clock to ensure tenancies are managed with compassion and properties are maintained to the highest standards.\n\n",
+  "about_text": "We are a dedicated property management company specializing in supported living accommodation. We work with local authorities and care providers to provide accommodation for those with support needs.\n\nWe believe that everyone deserves a safe, high-quality, and comfortable environment. Our team works around the clock to ensure tenancies are managed with compassion and properties are maintained to the highest standards.",
   "services_title": "Our Expertise",
   "services": [
     {
@@ -22,17 +23,25 @@
     {
       "title": "Pownall Road",
       "location": "Ipswich",
-      "description": "Multiple flats - and fun stuff"
+      "description": "Multiple flats - and fun stuff",
+      "image": ""
     },
     {
       "title": "Pitcairn Works",
       "location": "Ipswich",
-      "description": "A cul de sac of modern houses - ideal for privacy, but also communal living spaces."
+      "description": "A cul de sac of modern houses - ideal for privacy, but also communal living spaces.",
+      "image": ""
     },
     {
       "title": "Honduras Road",
       "location": "Milton Keynes",
-      "description": "A house for young people"
+      "description": "A house for young people",
+      "image": ""
     }
-  ]
+  ],
+  "contact_heading": "Let's Work Together",
+  "contact_text": "Contact The Orkis Group Ltd today to discuss how we can support your property management needs.",
+  "email_address": "admin@theorkisgroup.co.uk",
+  "phone_number": "01473 947361",
+  "copyright": "© 2026 The Orkis Group Ltd. All rights reserved."
 }
