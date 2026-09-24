@@ -137,7 +137,9 @@
                     document.getElementById('hero-title').innerHTML = titleText;
                 }
                 if (data.hero_subtitle) document.getElementById('hero-subtitle').innerText = data.hero_subtitle;
-
+// About Us
+                if (data.about_title) document.getElementById('about-title').innerText = data.about_title;
+                if (data.about_text) document.getElementById('about-text').innerText = data.about_text;
                 // Services
                 if (data.services_title) document.getElementById('services-title').innerText = data.services_title;
                 const servicesGrid = document.getElementById('services-grid');
