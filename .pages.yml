@@ -1,6 +1,6 @@
 media:
-  folder: images
-  public: /images
+  input: images
+  output: /images
 
 content:
   - name: website_data
